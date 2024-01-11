@@ -16,7 +16,7 @@ public class soft_2101 {
                 System.out.println(i);
                 break;
             }
-            if(i%2==0)
+            if(i%2==1)
                 System.out.print(i + ", ");
         }
 
