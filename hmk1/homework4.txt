@@ -1,0 +1,267 @@
+QUESTION a)
+
+Kullanıcı1@Oran MINGW64 ~
+$ git config --global user.name "Acenath"
+
+Kullanıcı1@Oran MINGW64 ~
+$ git config --global user.mail "CosmosSpaceShip1@hotmail.com"
+
+Kullanıcı1@Oran MINGW64 ~
+$ git config --global core.editor vim
+
+$ git config --global --list
+user.name=Acenath
+user.mail=CosmosSpaceShip1@hotmail.com
+core.editor=vim
+
+QUESTION b)
+
+
+Kullanıcı1@Oran MINGW64 ~
+$ git clone https://github.com/Acenath/PRINCIPLES-OF-SOFTWARE
+Cloning into 'PRINCIPLES-OF-SOFTWARE'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Kullanıcı1@Oran MINGW64 ~
+$ cd PRINCIPLES-OF-SOFTWARE
+
+Kullanıcı1@Oran MINGW64 ~/PRINCIPLES-OF-SOFTWARE (main)
+$ ls
+README.md
+
+Kullanıcı1@Oran MINGW64 ~/PRINCIPLES-OF-SOFTWARE (main)
+$ ls -a
+./  ../  .git/  README.md
+
+QUESTION c)
+[Department of Software Engineering - Işık University](https://www.isikun.edu.tr/akademik/muhendislik-fakultesi/bolumler-ve-programlar/bilgisayar-muhendisligi/programlar/lisans-programi/yazilim-muhendisligi)
+
+QUESTION d)
+
+Kullanıcı1@Oran MINGW64 ~/PRINCIPLES-OF-SOFTWARE (main)
+$ touch .gitignore
+
+Kullanıcı1@Oran MINGW64 ~/PRINCIPLES-OF-SOFTWARE (main)
+$ git add .gitignore
+
+Kullanıcı1@Oran MINGW64 ~/PRINCIPLES-OF-SOFTWARE (main)
+$ git commit -m "Setting up gitignore"
+[main 22943d1] Setting up gitignore
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+
+Kullanıcı1@Oran MINGW64 ~/PRINCIPLES-OF-SOFTWARE (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 816 bytes | 51.00 KiB/s, done.
+From https://github.com/Acenath/PRINCIPLES-OF-SOFTWARE
+ * branch            main       -> FETCH_HEAD
+   c45c957..fef3512  main       -> origin/main
+Merge made by the 'ort' strategy.
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Kullanıcı1@Oran MINGW64 ~/PRINCIPLES-OF-SOFTWARE (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 650 bytes | 650.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Acenath/PRINCIPLES-OF-SOFTWARE
+   fef3512..b839eac  main -> main
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+
+QUESTION e) and f)
+
+
+Kullanıcı1@Oran MINGW64 ~/PRINCIPLES-OF-SOFTWARE (main)
+$ git branch feature-1
+
+Kullanıcı1@Oran MINGW64 ~/PRINCIPLES-OF-SOFTWARE (main)
+$ git checkout feature-1
+Switched to branch 'feature-1'
+
+Kullanıcı1@Oran MINGW64 ~/PRINCIPLES-OF-SOFTWARE (feature-1)
+$ mkdir hmk1
+
+Kullanıcı1@Oran MINGW64 ~/PRINCIPLES-OF-SOFTWARE (feature-1)
+$ cd hmk1
+
+### I continued using GIT CMD
+
+C:\Users\90546>cd PRINCIPLES-OF-SOFTWARE
+
+C:\Users\90546\PRINCIPLES-OF-SOFTWARE>cd hmk1
+
+C:\Users\90546\PRINCIPLES-OF-SOFTWARE\hmk1>move "C:\Users\90546\Desktop\soft_2101.java" "C:\Users\90546\PRINCIPLES-OF-SOFTWARE\hmk1"
+        1 file(s) moved.
+
+C:\Users\90546\PRINCIPLES-OF-SOFTWARE\hmk1>git add  "C:\Users\90546\PRINCIPLES-OF-SOFTWARE\hmk1"
+
+C:\Users\90546\PRINCIPLES-OF-SOFTWARE\hmk1>git push origin feature-1
+Everything up-to-date
+
+C:\Users\90546\PRINCIPLES-OF-SOFTWARE\hmk1>git status
+On branch feature-1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   soft_2101.java
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../soft_2101.java
+
+
+C:\Users\90546\PRINCIPLES-OF-SOFTWARE\hmk1>git commit -m "satisfaying requirement one"
+[feature-1 2fbfd2f] satisfaying requirement one
+ 1 file changed, 23 insertions(+)
+ create mode 100644 hmk1/soft_2101.java
+
+C:\Users\90546\PRINCIPLES-OF-SOFTWARE\hmk1>git push origin feature-1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 408 bytes | 408.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Acenath/PRINCIPLES-OF-SOFTWARE
+   fc16ed4..2fbfd2f  feature-1 -> feature-1
+
+Question J)
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE (main)
+$ git branch feature-2
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE (main)
+$ git branch feature-3
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE (main)
+$ git branch
+  feature-2
+  feature-3
+* main
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE (main)
+$ git checkout feature-2
+Switched to branch 'feature-2'
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE/hmk1 (feature-2)
+$ cp "C:\Users\M\Desktop\soft_2101.java" "C:\Users\M\Desktop\PortableGit\PRINCIPLES-OF-SOFTWARE\hmk1"
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE/hmk1 (feature-2)
+$ git add .
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE/hmk1 (feature-2)
+$ git commit -m "satisfying requirement change two"
+[feature-2 ec43ef2] satisfying requirement change two
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+Question M)
+
+### FEATURE1-FEATURE2
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE (main)
+$ git diff feature-1..feature-2
+diff --git a/hmk1/soft_2101.java b/hmk1/soft_2101.java
+index 31c44b3..f52e92e 100644
+--- a/hmk1/soft_2101.java
++++ b/hmk1/soft_2101.java
+@@ -16,6 +16,7 @@ public class soft_2101 {
+                 System.out.println(i);
+                 break;
+             }
++            if(i%2==0)
+                 System.out.print(i + ", ");
+         }
+
+### FEATURE2-FEATURE3
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE (main)
+$ git diff feature-2..feature-3
+diff --git a/hmk1/soft_2101.java b/hmk1/soft_2101.java
+index f52e92e..c95c2a7 100644
+--- a/hmk1/soft_2101.java
++++ b/hmk1/soft_2101.java
+@@ -16,7 +16,7 @@ public class soft_2101 {
+                 System.out.println(i);
+                 break;
+             }
+-            if(i%2==0)
++            if(i%2==1)
+                 System.out.print(i + ", ");
+         }
+
+### NO DIFFERENCE BETWEEN MAIN AND FEATURE-1
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE (main)
+$ git diff main..feature-1
+
+### MAIN-FEATURE2
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE (main)
+$ git diff main..feature-2
+diff --git a/hmk1/soft_2101.java b/hmk1/soft_2101.java
+index 31c44b3..f52e92e 100644
+--- a/hmk1/soft_2101.java
++++ b/hmk1/soft_2101.java
+@@ -16,6 +16,7 @@ public class soft_2101 {
+                 System.out.println(i);
+                 break;
+             }
++            if(i%2==0)
+                 System.out.print(i + ", ");
+         }
+
+### MAIN-FEATURE3
+
+M@z9 MINGW64 /PRINCIPLES-OF-SOFTWARE (main)
+$ git diff main..feature-3
+diff --git a/hmk1/soft_2101.java b/hmk1/soft_2101.java
+index 31c44b3..c95c2a7 100644
+--- a/hmk1/soft_2101.java
++++ b/hmk1/soft_2101.java
+@@ -16,6 +16,7 @@ public class soft_2101 {
+                 System.out.println(i);
+                 break;
+             }
++            if(i%2==1)
+                 System.out.print(i + ", ");
+         }
+
+
+
